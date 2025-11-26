@@ -1,0 +1,9 @@
+{
+    "lib": "libvart-dpu-runner.so",
+    "filename": "DeepLabV3_MobileNetV3.xmodel",
+    "kernel": [
+        "subgraph_DeepLabV3__DeepLabV3_DeepLabHead_classifier__ASPP_0__ASPPPooling_convs__ModuleList_4__AdaptiveAvgPool2d_0__19855_fix",
+        "subgraph_DeepLabV3__DeepLabV3_DeepLabHead_classifier__ASPP_0__ASPPConv_convs__ModuleList_1__Conv2d_0__ret_273"
+    ],
+    "target": "DPUCZDX8G_ISA1_B4096_0101000016010407"
+}

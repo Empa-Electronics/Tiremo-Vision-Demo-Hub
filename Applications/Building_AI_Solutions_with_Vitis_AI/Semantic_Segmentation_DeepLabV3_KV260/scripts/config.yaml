@@ -1,0 +1,82 @@
+# DeepLabV3 MobileNetV3 Configuration File
+# This file contains configurable parameters for the segmentation application
+
+# Camera Settings
+camera:
+  width: 640
+  height: 480
+  device: "/dev/video0"
+  framerate: 30
+  buffer_size: 2
+
+# Display Settings
+display:
+  width: 800
+  height: 600
+  window_name: "DeepLabV3 MobileNetV3 - Semantic Segmentation"
+  fullscreen: true
+
+# Model Settings
+model:
+  input_width: 224
+  input_height: 224
+  architecture: "DPU"  # DPU or Hybrid
+  dpu_version: "B3136"  # B3136 or B4096
+
+# Visualization Settings
+visualization:
+  blend_alpha: 0.5  # Original image weight (0.0 to 1.0)
+  blend_beta: 0.5   # Segmentation mask weight (0.0 to 1.0)
+  
+  # Segmentation color palette (BGR format)
+  colors:
+    - [0, 0, 0]         # 0: background
+    - [128, 64, 128]    # 1: road
+    - [232, 35, 244]    # 2: sidewalk
+    - [70, 70, 70]      # 3: building
+    - [156, 102, 102]   # 4: wall
+    - [153, 153, 190]   # 5: fence
+    - [153, 153, 153]   # 6: pole
+    - [30, 170, 250]    # 7: traffic light
+    - [0, 220, 220]     # 8: traffic sign
+    - [35, 142, 107]    # 9: vegetation
+    - [152, 251, 152]   # 10: terrain
+    - [180, 130, 0]     # 11: sky
+    - [60, 20, 220]     # 12: person
+    - [0, 0, 255]       # 13: rider
+    - [142, 0, 0]       # 14: car
+    - [70, 0, 0]        # 15: truck
+    - [100, 60, 0]      # 16: bus
+    - [100, 80, 0]      # 17: train
+    - [230, 0, 0]       # 18: motorcycle
+    - [32, 11, 119]     # 19: bicycle
+    - [255, 255, 255]   # 20: void/ignore
+  
+  # Class names for detected objects
+  class_names:
+    - "background"
+    - "aeroplane"     #0
+    - "bicycle"       #1
+    - "bird"          #2
+    - "boat"          #3
+    - "bottle"        #4
+    - "bus"           #5
+    - "car"           #6
+    - "cat"           #7
+    - "chair"         #8
+    - "cow"           #9
+    - "diningtable"   #10
+    - "dog"           #11
+    - "horse"         #12
+    - "motorbike"     #13
+    - "person"        #14
+    - "pottedplant"   #15
+    - "sheep"         #16
+    - "sofa"          #17
+    - "train"         #18
+    - "tvmonitor"     #19
+
+  # Performance overlay colors (BGR format)
+  overlay_color: [98, 182, 70]  # Green for FPS text
+  overlay_background: [0, 0, 0]  # Black background
+  overlay_alpha: 0.4             # Transparency of overlay
