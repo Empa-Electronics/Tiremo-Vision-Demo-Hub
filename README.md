@@ -5,7 +5,7 @@
 
 # AMD DAY 2025 by Empa Electronics  
 
-## Merhaba
+## Merhaba!
 Empa Electronics tarafından düzenlenen Tech Days etkinliklerimizin yeni adımı AMD DAY 2025'e hoş geldiniz. Bu açık-kaynaklı repository, Tech Day etkiliğimizde paylaşılan kaynaklara kolaylıkla eşlik edebilmeniz için sizinle paylaşılmıştır.
 
 **Uçta Yapay Zeka**  
