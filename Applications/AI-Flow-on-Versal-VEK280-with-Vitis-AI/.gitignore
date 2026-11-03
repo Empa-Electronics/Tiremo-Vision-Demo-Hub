@@ -1,0 +1,14 @@
+# Only the source code: no environment, weights, data or results.
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+
+weights/
+*.pt
+*.onnx
+*.npz
+
+result_*/
+input.png
+input.txt
