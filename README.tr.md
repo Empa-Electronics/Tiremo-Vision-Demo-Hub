@@ -36,7 +36,6 @@ Demo sayfaları İngilizcedir.
 | [Smart Camera Person Tracker](Applications/kv260-smart-camera-person-tracker/) | Kria KV260 | Kişiler kalıcı kimliklerle, canlı HUD ve RTSP akışıyla izlenir |
 | [Lidar Person Detection](Applications/kr260-lidar-person-detection/) | Kria KR260 | Servo üzerindeki 2B lidar kişileri 3B olarak bulur; filtreleme PL'de, sınıflandırma DPU'da |
 | [YOLOv8s on the Versal NPU with Vitis AI 6.1](Applications/AI-Flow-on-Versal-VEK280-with-Vitis-AI/) | Versal AI Edge VEK280 | YOLOv8s modelini NPU için adım adım nicemleyen ve derleyen bir notebook, kaynak koduyla |
-| [Semantic Segmentation with DeepLabV3](Applications/Building_AI_Solutions_with_Vitis_AI/Semantic_Segmentation_DeepLabV3_KV260/) | Kria KV260 | DPU üzerinde DeepLabV3 MobileNetV3 ile canlı kamera segmentasyonu, derlenmiş modeller ve betiklerle |
 
 ## Uçta yapay zeka
 

@@ -34,7 +34,6 @@ The pages are written for two kinds of readers. If you want a quick picture, the
 | [Smart Camera Person Tracker](Applications/kv260-smart-camera-person-tracker/) | Kria KV260 | People tracked with stable IDs, a live HUD and an RTSP stream |
 | [Lidar Person Detection](Applications/kr260-lidar-person-detection/) | Kria KR260 | A 2-D lidar on a servo finds people in 3-D, with filtering in the PL and classification on the DPU |
 | [YOLOv8s on the Versal NPU with Vitis AI 6.1](Applications/AI-Flow-on-Versal-VEK280-with-Vitis-AI/) | Versal AI Edge VEK280 | Step-by-step notebook that quantizes and compiles YOLOv8s for the NPU, with source code |
-| [Semantic Segmentation with DeepLabV3](Applications/Building_AI_Solutions_with_Vitis_AI/Semantic_Segmentation_DeepLabV3_KV260/) | Kria KV260 | Live camera segmentation with DeepLabV3 MobileNetV3 on the DPU, with compiled models and scripts |
 
 ## Edge AI
 
