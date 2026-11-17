@@ -32,6 +32,7 @@ Demo sayfaları İngilizcedir.
 | [Air-to-All-Around Vision Tracking](Applications/vek280-drone-vision-tracking/) | Versal AI Edge VEK280 | Yapay zeka kontrollü bir drone yalnızca kamerasıyla uçar, nesne tespiti AI Engine NPU üzerinde çalışır |
 | [Air-to-Ground Surveillance](Applications/alinx-z7a-air-to-ground-surveillance/) | Zynq UltraScale+ (ALINX Z7-A) | Drone üzerindeki dört kamera ve tamamı NPU üzerinde çalışan bir kişi tespit modeli |
 | [ADAS Multi-Task Perception](Applications/kv260-adas-multitask-perception/) | Kria KV260 | Tek bir ağ ile beş sürüş algılama görevi, 30 FPS hızında |
+| [One PCIe Card, Many Accelerators](Applications/deico-z7015-pcie-accelerator-switching/) | Zynq-7015 PCIe kartı | PC çalışmaya devam ederken PCIe üzerinden yaklaşık 3 saniyede yeni bir FPGA hızlandırıcısı yükler |
 | [YOLOv8s on the Versal NPU with Vitis AI 6.1](Applications/AI-Flow-on-Versal-VEK280-with-Vitis-AI/) | Versal AI Edge VEK280 | YOLOv8s modelini NPU için adım adım nicemleyen ve derleyen bir notebook, kaynak koduyla |
 | [Semantic Segmentation with DeepLabV3](Applications/Building_AI_Solutions_with_Vitis_AI/Semantic_Segmentation_DeepLabV3_KV260/) | Kria KV260 | DPU üzerinde DeepLabV3 MobileNetV3 ile canlı kamera segmentasyonu, derlenmiş modeller ve betiklerle |
 
