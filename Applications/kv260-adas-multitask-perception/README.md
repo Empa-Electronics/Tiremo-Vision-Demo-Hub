@@ -107,6 +107,7 @@ The network is MultiTask V3 from the Vitis AI 2.5 model zoo, deployed in INT8 on
 - [Air-to-All-Around Vision Tracking](../vek280-drone-vision-tracking/): an AI drone that flies by its camera alone
 - [Air-to-Ground Surveillance](../alinx-z7a-air-to-ground-surveillance/): four drone cameras and one person detector on the NPU
 - [One PCIe Card, Many Accelerators](../deico-z7015-pcie-accelerator-switching/): FPGA accelerators swapped over PCIe in about 3 s
+- [Smart Camera Person Tracker](../kv260-smart-camera-person-tracker/): people tracked with stable IDs on a Kria KV260
 
 ## Contact
 

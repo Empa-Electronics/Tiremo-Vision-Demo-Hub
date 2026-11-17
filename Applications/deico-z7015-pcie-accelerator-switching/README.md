@@ -108,6 +108,7 @@ Next, a new boot image will be written to the SD card over PCIe, the switch will
 - [Air-to-All-Around Vision Tracking](../vek280-drone-vision-tracking/): an AI drone that flies by its camera alone
 - [Air-to-Ground Surveillance](../alinx-z7a-air-to-ground-surveillance/): four drone cameras and one person detector on the NPU
 - [ADAS Multi-Task Perception](../kv260-adas-multitask-perception/): five perception tasks in one network at 30 FPS
+- [Lidar Person Detection](../kr260-lidar-person-detection/): people found in a 3-D lidar sweep, in the dark
 
 ## Contact
 
