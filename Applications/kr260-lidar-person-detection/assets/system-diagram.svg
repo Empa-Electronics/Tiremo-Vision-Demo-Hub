@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" width="1200" height="650" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<defs><marker id="de" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#424a53"/></marker><marker id="ds" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10,0 L0,5 L10,10 z" fill="#424a53"/></marker><marker id="ae" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#e0821e"/></marker><marker id="as" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10,0 L0,5 L10,10 z" fill="#e0821e"/></marker><marker id="ce" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8c959f"/></marker></defs>
+<rect x="1" y="1" width="1198" height="648" rx="20" fill="#ffffff" stroke="#d0d7de" stroke-width="2"/>
+<text x="32" y="50" font-size="26" fill="#1f2328" text-anchor="start" font-weight="700">2-D lidar on a servo → PL filter + DPU → people on the display</text>
+<rect x="28" y="150" width="190" height="76" rx="10" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+<text x="123.0" y="184.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">YDLIDAR X2</text>
+<text x="123.0" y="207.0" font-size="16" fill="#57606a" text-anchor="middle">USB · turn every 95 ms</text>
+<rect x="28" y="270" width="190" height="76" rx="10" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+<text x="123.0" y="304.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Servo + U2D2</text>
+<text x="123.0" y="327.0" font-size="16" fill="#57606a" text-anchor="middle">tilts the lidar</text>
+<rect x="28" y="400" width="190" height="76" rx="10" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+<text x="123.0" y="434.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Display panel</text>
+<text x="123.0" y="457.0" font-size="16" fill="#57606a" text-anchor="middle">DisplayPort</text>
+<rect x="262" y="80" width="910" height="496" rx="16" fill="#f6f8fa" stroke="#424a53" stroke-width="2.5"/>
+<text x="280" y="108" font-size="19" fill="#1f2328" text-anchor="start" font-weight="700">Zynq UltraScale+ (KR260)</text>
+<rect x="282" y="122" width="400" height="338" rx="12" fill="#ebf6e5" stroke="#4f9d3a" stroke-width="2"/>
+<text x="296" y="144" font-size="16" fill="#3d7d2c" text-anchor="start" font-weight="700">PS · Cortex-A53 · Linux</text>
+<rect x="297" y="152" width="370" height="62" rx="10" fill="#ffffff" stroke="#4f9d3a" stroke-width="2"/>
+<text x="482.0" y="179.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Main thread</text>
+<text x="482.0" y="202.0" font-size="16" fill="#57606a" text-anchor="middle">sort the turn · add the servo angle</text>
+<rect x="297" y="228" width="370" height="62" rx="10" fill="#ffffff" stroke="#4f9d3a" stroke-width="2"/>
+<text x="482.0" y="255.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Map worker</text>
+<text x="482.0" y="278.0" font-size="16" fill="#57606a" text-anchor="middle">ground · objects · mesh</text>
+<rect x="297" y="304" width="370" height="62" rx="10" fill="#ffffff" stroke="#4f9d3a" stroke-width="2"/>
+<text x="482.0" y="331.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Person server</text>
+<text x="482.0" y="354.0" font-size="16" fill="#57606a" text-anchor="middle">one front view per object, once per sweep</text>
+<rect x="297" y="380" width="370" height="62" rx="10" fill="#ffffff" stroke="#4f9d3a" stroke-width="2"/>
+<text x="482.0" y="407.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Display</text>
+<text x="482.0" y="430.0" font-size="16" fill="#57606a" text-anchor="middle">numbered people · HUMAN DETECTED</text>
+<rect x="700" y="122" width="452" height="338" rx="12" fill="#e7f1fb" stroke="#2f80c8" stroke-width="2"/>
+<text x="714" y="144" font-size="16" fill="#1f6fb2" text-anchor="start" font-weight="700">PL · lidar-b1024 design</text>
+<rect x="716" y="152" width="410" height="62" rx="10" fill="#ffffff" stroke="#2f80c8" stroke-width="2"/>
+<text x="921.0" y="179.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">lidar_filter · our HLS IP</text>
+<text x="921.0" y="202.0" font-size="16" fill="#57606a" text-anchor="middle">edge · thin · median · grid · x y z · 0.51 ms</text>
+<rect x="716" y="226" width="410" height="50" rx="10" fill="#ffffff" stroke="#2f80c8" stroke-width="2"/>
+<text x="921.0" y="258.0" font-size="18" fill="#1f2328" text-anchor="middle" font-weight="700">axi_intc · done interrupts to the GIC</text>
+<rect x="716" y="290" width="410" height="156" rx="12" fill="#fdf1e3" stroke="#e0821e" stroke-width="2"/>
+<text x="730" y="312" font-size="16" fill="#b8650f" text-anchor="start" font-weight="700">DPU B1024 · INT8</text>
+<rect x="732" y="326" width="378" height="62" rx="10" fill="#ffffff" stroke="#e0821e" stroke-width="2"/>
+<text x="921.0" y="353.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">PersonNet</text>
+<text x="921.0" y="376.0" font-size="16" fill="#57606a" text-anchor="middle">2×48×32 front view · person or not</text>
+<text x="921" y="424" font-size="17" fill="#57606a" text-anchor="middle" font-style="italic">0.174 ms per object</text>
+<rect x="282" y="500" width="870" height="56" rx="12" fill="#eef1f4" stroke="#8c959f" stroke-width="2"/>
+<text x="717" y="535" font-size="18" fill="#1f2328" text-anchor="middle" font-weight="700">DDR · lidar turns · settings · points · weights · results</text>
+<path d="M218,188 L258,188 L258,177 L297,177" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<path d="M218,308 L244,308 L244,198 L297,198" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)" marker-start="url(#ds)"/>
+<path d="M482,214 L482,228" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<path d="M482,290 L482,304" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<path d="M482,366 L482,380" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<path d="M297,411 L258,411 L258,438 L218,438" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<path d="M482,460 L482,500" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)" marker-start="url(#ds)"/>
+<path d="M1126,183 L1140,183 L1140,500" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)" marker-start="url(#ds)"/>
+<path d="M921,446 L921,500" fill="none" stroke="#e0821e" stroke-width="2.5" marker-end="url(#ae)" marker-start="url(#as)"/>
+<path d="M667,170 L716,170" fill="none" stroke="#8c959f" stroke-width="2.5" stroke-dasharray="7 5" marker-end="url(#ce)"/>
+<path d="M716,251 L690,251 L690,335 L667,335" fill="none" stroke="#8c959f" stroke-width="2.5" stroke-dasharray="7 5" marker-end="url(#ce)"/>
+<rect x="32" y="603" width="20" height="20" rx="5" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+<text x="62" y="618" font-size="16" fill="#57606a" text-anchor="start">Off-chip</text>
+<rect x="168" y="603" width="20" height="20" rx="5" fill="#e7f1fb" stroke="#2f80c8" stroke-width="2"/>
+<text x="198" y="618" font-size="16" fill="#57606a" text-anchor="start">PL</text>
+<rect x="250" y="603" width="20" height="20" rx="5" fill="#ebf6e5" stroke="#4f9d3a" stroke-width="2"/>
+<text x="280" y="618" font-size="16" fill="#57606a" text-anchor="start">PS (Arm)</text>
+<rect x="386" y="603" width="20" height="20" rx="5" fill="#fdf1e3" stroke="#e0821e" stroke-width="2"/>
+<text x="416" y="618" font-size="16" fill="#57606a" text-anchor="start">DPU</text>
+<rect x="490" y="603" width="20" height="20" rx="5" fill="#eef1f4" stroke="#8c959f" stroke-width="2"/>
+<text x="520" y="618" font-size="16" fill="#57606a" text-anchor="start">Memory</text>
+<path d="M608,613 L642,613" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<text x="654" y="618" font-size="16" fill="#57606a" text-anchor="start">Data</text>
+<path d="M724,613 L758,613" stroke="#e0821e" stroke-width="2.5" marker-end="url(#ae)"/>
+<text x="770" y="618" font-size="16" fill="#57606a" text-anchor="start">DPU data</text>
+<path d="M870,613 L904,613" stroke="#8c959f" stroke-width="2.5" stroke-dasharray="7 5" marker-end="url(#ce)"/>
+<text x="916" y="618" font-size="16" fill="#57606a" text-anchor="start">Control, interrupts</text>
+</svg>

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" width="1200" height="650" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<defs><marker id="de" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#424a53"/></marker><marker id="ds" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10,0 L0,5 L10,10 z" fill="#424a53"/></marker><marker id="ae" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#e0821e"/></marker><marker id="as" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10,0 L0,5 L10,10 z" fill="#e0821e"/></marker></defs>
+<rect x="1" y="1" width="1198" height="648" rx="20" fill="#ffffff" stroke="#d0d7de" stroke-width="2"/>
+<text x="32" y="50" font-size="26" fill="#1f2328" text-anchor="start" font-weight="700">4× GMSL2 cameras → Vitis AI NPU → DisplayPort + RTSP</text>
+<rect x="28" y="120" width="190" height="84" rx="10" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+<text x="123.0" y="158.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">4× GMSL2</text>
+<text x="123.0" y="181.0" font-size="16" fill="#57606a" text-anchor="middle">1× 4K · 3× 1920×1280</text>
+<rect x="28" y="232" width="190" height="76" rx="10" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+<text x="123.0" y="266.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">MAX96712</text>
+<text x="123.0" y="289.0" font-size="16" fill="#57606a" text-anchor="middle">deserializer</text>
+<rect x="28" y="410" width="190" height="70" rx="10" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+<text x="123.0" y="441.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Monitor</text>
+<text x="123.0" y="464.0" font-size="16" fill="#57606a" text-anchor="middle">DisplayPort</text>
+<rect x="28" y="494" width="190" height="70" rx="10" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+<text x="123.0" y="525.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">RTSP client</text>
+<text x="123.0" y="548.0" font-size="16" fill="#57606a" text-anchor="middle">VLC · GStreamer</text>
+<rect x="262" y="80" width="910" height="500" rx="16" fill="#f6f8fa" stroke="#424a53" stroke-width="2.5"/>
+<text x="280" y="108" font-size="19" fill="#1f2328" text-anchor="start" font-weight="700">Zynq UltraScale+ ZU7EV</text>
+<rect x="282" y="112" width="870" height="112" rx="12" fill="#e7f1fb" stroke="#2f80c8" stroke-width="2"/>
+<text x="296" y="134" font-size="16" fill="#1f6fb2" text-anchor="start" font-weight="700">PL · camera pipeline</text>
+<rect x="300" y="148" width="160" height="62" rx="10" fill="#ffffff" stroke="#2f80c8" stroke-width="2"/>
+<text x="380.0" y="175.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">CSI-2 RX</text>
+<text x="380.0" y="198.0" font-size="16" fill="#57606a" text-anchor="middle">4 lanes</text>
+<rect x="480" y="148" width="140" height="62" rx="10" fill="#ffffff" stroke="#2f80c8" stroke-width="2"/>
+<text x="550.0" y="186.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">YUV → RGB</text>
+<rect x="640" y="148" width="180" height="62" rx="10" fill="#ffffff" stroke="#2f80c8" stroke-width="2"/>
+<text x="730.0" y="175.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Frame buffers</text>
+<text x="730.0" y="198.0" font-size="16" fill="#57606a" text-anchor="middle">1 per camera</text>
+<rect x="282" y="238" width="330" height="326" rx="12" fill="#ebf6e5" stroke="#4f9d3a" stroke-width="2"/>
+<text x="296" y="260" font-size="16" fill="#3d7d2c" text-anchor="start" font-weight="700">PS · 4× Cortex-A53</text>
+<rect x="297" y="268" width="300" height="58" rx="10" fill="#ffffff" stroke="#4f9d3a" stroke-width="2"/>
+<text x="447.0" y="293.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Capture app</text>
+<text x="447.0" y="316.0" font-size="16" fill="#57606a" text-anchor="middle">decode · NMS · frame sync</text>
+<rect x="297" y="336" width="300" height="58" rx="10" fill="#ffffff" stroke="#4f9d3a" stroke-width="2"/>
+<text x="447.0" y="361.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Mali-400 GPU</text>
+<text x="447.0" y="384.0" font-size="16" fill="#57606a" text-anchor="middle">letterbox → INT8 · HUD</text>
+<rect x="297" y="418" width="300" height="54" rx="10" fill="#ffffff" stroke="#4f9d3a" stroke-width="2"/>
+<text x="447.0" y="441.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">DisplayPort out</text>
+<text x="447.0" y="464.0" font-size="16" fill="#57606a" text-anchor="middle">1080p</text>
+<rect x="297" y="502" width="300" height="54" rx="10" fill="#ffffff" stroke="#4f9d3a" stroke-width="2"/>
+<text x="447.0" y="525.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">RTSP server</text>
+<text x="447.0" y="548.0" font-size="16" fill="#57606a" text-anchor="middle">H.264 · 720p</text>
+<rect x="640" y="238" width="180" height="326" rx="12" fill="#eef1f4" stroke="#8c959f" stroke-width="2"/>
+<text x="654" y="260" font-size="16" fill="#57606a" text-anchor="start" font-weight="700">Memory</text>
+<rect x="655" y="268" width="150" height="152" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="730.0" y="318.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">DDR</text>
+<text x="730.0" y="341.0" font-size="16" fill="#57606a" text-anchor="middle">camera frames</text>
+<text x="730.0" y="364.0" font-size="16" fill="#57606a" text-anchor="middle">NPU tensors</text>
+<text x="730.0" y="387.0" font-size="16" fill="#57606a" text-anchor="middle">512 MB region</text>
+<rect x="848" y="238" width="304" height="326" rx="12" fill="#fdf1e3" stroke="#e0821e" stroke-width="2"/>
+<text x="862" y="260" font-size="16" fill="#b8650f" text-anchor="start" font-weight="700">Vitis AI NPU (PL)</text>
+<rect x="863" y="268" width="274" height="152" rx="10" fill="#ffffff" stroke="#e0821e" stroke-width="2"/>
+<text x="1000.0" y="318.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">YOLOv8s</text>
+<text x="1000.0" y="341.0" font-size="16" fill="#57606a" text-anchor="middle">640×384 · INT8</text>
+<text x="1000.0" y="364.0" font-size="16" fill="#57606a" text-anchor="middle">1 class: person</text>
+<text x="1000.0" y="387.0" font-size="16" fill="#57606a" text-anchor="middle">4 cameras per run</text>
+<path d="M123,204 L123,232" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<path d="M218,270 L240,270 L240,179 L300,179" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<path d="M460,179 L480,179" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<path d="M620,179 L640,179" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<path d="M730,210 L730,268" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<path d="M597,320 L655,320" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)" marker-start="url(#ds)"/>
+<path d="M805,344 L863,344" fill="none" stroke="#e0821e" stroke-width="2.5" marker-end="url(#ae)" marker-start="url(#as)"/>
+<path d="M297,445 L218,445" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<path d="M297,529 L218,529" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<rect x="32" y="603" width="20" height="20" rx="5" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+<text x="62" y="618" font-size="16" fill="#57606a" text-anchor="start">Off-chip</text>
+<rect x="168" y="603" width="20" height="20" rx="5" fill="#e7f1fb" stroke="#2f80c8" stroke-width="2"/>
+<text x="198" y="618" font-size="16" fill="#57606a" text-anchor="start">PL</text>
+<rect x="250" y="603" width="20" height="20" rx="5" fill="#ebf6e5" stroke="#4f9d3a" stroke-width="2"/>
+<text x="280" y="618" font-size="16" fill="#57606a" text-anchor="start">PS (Arm)</text>
+<rect x="386" y="603" width="20" height="20" rx="5" fill="#fdf1e3" stroke="#e0821e" stroke-width="2"/>
+<text x="416" y="618" font-size="16" fill="#57606a" text-anchor="start">NPU</text>
+<rect x="477" y="603" width="20" height="20" rx="5" fill="#eef1f4" stroke="#8c959f" stroke-width="2"/>
+<text x="507" y="618" font-size="16" fill="#57606a" text-anchor="start">Memory</text>
+<path d="M595,613 L629,613" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<text x="641" y="618" font-size="16" fill="#57606a" text-anchor="start">Data</text>
+<path d="M711,613 L745,613" stroke="#e0821e" stroke-width="2.5" marker-end="url(#ae)"/>
+<text x="757" y="618" font-size="16" fill="#57606a" text-anchor="start">NPU data</text>
+</svg>

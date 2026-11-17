@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" width="1200" height="650" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<defs><marker id="de" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#424a53"/></marker><marker id="ds" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10,0 L0,5 L10,10 z" fill="#424a53"/></marker><marker id="ae" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#e0821e"/></marker><marker id="as" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10,0 L0,5 L10,10 z" fill="#e0821e"/></marker></defs>
+<rect x="1" y="1" width="1198" height="648" rx="20" fill="#ffffff" stroke="#d0d7de" stroke-width="2"/>
+<text x="32" y="50" font-size="26" fill="#1f2328" text-anchor="start" font-weight="700">USB camera → MultiTask V3 on the DPU → HDMI</text>
+<rect x="28" y="150" width="190" height="76" rx="10" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+<text x="123.0" y="184.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">USB camera</text>
+<text x="123.0" y="207.0" font-size="16" fill="#57606a" text-anchor="middle">720p</text>
+<rect x="28" y="366" width="190" height="76" rx="10" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+<text x="123.0" y="400.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">HDMI monitor</text>
+<text x="123.0" y="423.0" font-size="16" fill="#57606a" text-anchor="middle">live overlay</text>
+<rect x="262" y="80" width="910" height="496" rx="16" fill="#f6f8fa" stroke="#424a53" stroke-width="2.5"/>
+<text x="280" y="108" font-size="19" fill="#1f2328" text-anchor="start" font-weight="700">Zynq UltraScale+ K26 SOM (KV260)</text>
+<rect x="282" y="122" width="330" height="338" rx="12" fill="#ebf6e5" stroke="#4f9d3a" stroke-width="2"/>
+<text x="296" y="144" font-size="16" fill="#3d7d2c" text-anchor="start" font-weight="700">PS · 4× Cortex-A53</text>
+<rect x="297" y="152" width="300" height="62" rx="10" fill="#ffffff" stroke="#4f9d3a" stroke-width="2"/>
+<text x="447.0" y="179.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">USB capture</text>
+<text x="447.0" y="202.0" font-size="16" fill="#57606a" text-anchor="middle">V4L2 · 720p</text>
+<rect x="297" y="228" width="300" height="62" rx="10" fill="#ffffff" stroke="#4f9d3a" stroke-width="2"/>
+<text x="447.0" y="255.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Pre-processing</text>
+<text x="447.0" y="278.0" font-size="16" fill="#57606a" text-anchor="middle">RGB · 320×512 · mean</text>
+<rect x="297" y="304" width="300" height="62" rx="10" fill="#ffffff" stroke="#4f9d3a" stroke-width="2"/>
+<text x="447.0" y="331.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Post-processing</text>
+<text x="447.0" y="354.0" font-size="16" fill="#57606a" text-anchor="middle">boxes · masks · depth</text>
+<rect x="297" y="380" width="300" height="62" rx="10" fill="#ffffff" stroke="#4f9d3a" stroke-width="2"/>
+<text x="447.0" y="407.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Overlay + display</text>
+<text x="447.0" y="430.0" font-size="16" fill="#57606a" text-anchor="middle">Mali-400 GPU → HDMI</text>
+<rect x="640" y="122" width="512" height="338" rx="12" fill="#e7f1fb" stroke="#2f80c8" stroke-width="2"/>
+<text x="654" y="144" font-size="16" fill="#1f6fb2" text-anchor="start" font-weight="700">PL</text>
+<rect x="656" y="150" width="480" height="296" rx="12" fill="#fdf1e3" stroke="#e0821e" stroke-width="2"/>
+<text x="670" y="172" font-size="16" fill="#b8650f" text-anchor="start" font-weight="700">DPU B4096 · INT8</text>
+<rect x="672" y="180" width="448" height="62" rx="10" fill="#ffffff" stroke="#e0821e" stroke-width="2"/>
+<text x="896.0" y="207.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">MultiTask V3</text>
+<text x="896.0" y="230.0" font-size="16" fill="#57606a" text-anchor="middle">ResNet-18 backbone · 320×512 · 25.44 GFLOPs</text>
+<rect x="672" y="262" width="216" height="46" rx="10" fill="#ffffff" stroke="#e0821e" stroke-width="2"/>
+<text x="780.0" y="292.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Detection</text>
+<rect x="904" y="262" width="216" height="46" rx="10" fill="#ffffff" stroke="#e0821e" stroke-width="2"/>
+<text x="1012.0" y="292.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Segmentation</text>
+<rect x="672" y="322" width="140" height="46" rx="10" fill="#ffffff" stroke="#e0821e" stroke-width="2"/>
+<text x="742.0" y="352.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Lane</text>
+<rect x="826" y="322" width="140" height="46" rx="10" fill="#ffffff" stroke="#e0821e" stroke-width="2"/>
+<text x="896.0" y="352.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Drivable</text>
+<rect x="980" y="322" width="140" height="46" rx="10" fill="#ffffff" stroke="#e0821e" stroke-width="2"/>
+<text x="1050.0" y="352.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Depth</text>
+<text x="896" y="414" font-size="17" fill="#57606a" text-anchor="middle" font-style="italic">5 tasks in one pass · 30 FPS · ~9 W</text>
+<rect x="282" y="500" width="870" height="56" rx="12" fill="#eef1f4" stroke="#8c959f" stroke-width="2"/>
+<text x="717" y="535" font-size="18" fill="#1f2328" text-anchor="middle" font-weight="700">DDR · camera frames · input tensors · task outputs</text>
+<path d="M218,183 L297,183" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<path d="M447,214 L447,228" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<path d="M447,290 L447,304" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<path d="M447,366 L447,380" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<path d="M597,259 L626,259 L626,211 L672,211" fill="none" stroke="#e0821e" stroke-width="2.5" marker-end="url(#ae)"/>
+<path d="M672,345 L626,345 L626,335 L597,335" fill="none" stroke="#e0821e" stroke-width="2.5" marker-end="url(#ae)"/>
+<path d="M297,411 L218,411" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<path d="M447,460 L447,500" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)" marker-start="url(#ds)"/>
+<path d="M896,446 L896,500" fill="none" stroke="#e0821e" stroke-width="2.5" marker-end="url(#ae)" marker-start="url(#as)"/>
+<rect x="32" y="603" width="20" height="20" rx="5" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+<text x="62" y="618" font-size="16" fill="#57606a" text-anchor="start">Off-chip</text>
+<rect x="168" y="603" width="20" height="20" rx="5" fill="#e7f1fb" stroke="#2f80c8" stroke-width="2"/>
+<text x="198" y="618" font-size="16" fill="#57606a" text-anchor="start">PL</text>
+<rect x="250" y="603" width="20" height="20" rx="5" fill="#ebf6e5" stroke="#4f9d3a" stroke-width="2"/>
+<text x="280" y="618" font-size="16" fill="#57606a" text-anchor="start">PS (Arm)</text>
+<rect x="386" y="603" width="20" height="20" rx="5" fill="#fdf1e3" stroke="#e0821e" stroke-width="2"/>
+<text x="416" y="618" font-size="16" fill="#57606a" text-anchor="start">DPU (NPU)</text>
+<rect x="531" y="603" width="20" height="20" rx="5" fill="#eef1f4" stroke="#8c959f" stroke-width="2"/>
+<text x="561" y="618" font-size="16" fill="#57606a" text-anchor="start">Memory</text>
+<path d="M649,613 L683,613" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<text x="695" y="618" font-size="16" fill="#57606a" text-anchor="start">Data</text>
+<path d="M765,613 L799,613" stroke="#e0821e" stroke-width="2.5" marker-end="url(#ae)"/>
+<text x="811" y="618" font-size="16" fill="#57606a" text-anchor="start">DPU data</text>
+</svg>

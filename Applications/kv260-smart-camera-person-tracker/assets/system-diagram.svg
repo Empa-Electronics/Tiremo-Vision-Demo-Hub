@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" width="1200" height="650" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<defs><marker id="de" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#424a53"/></marker><marker id="ds" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10,0 L0,5 L10,10 z" fill="#424a53"/></marker><marker id="ae" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#e0821e"/></marker><marker id="as" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10,0 L0,5 L10,10 z" fill="#e0821e"/></marker></defs>
+<rect x="1" y="1" width="1198" height="648" rx="20" fill="#ffffff" stroke="#d0d7de" stroke-width="2"/>
+<text x="32" y="50" font-size="26" fill="#1f2328" text-anchor="start" font-weight="700">MIPI camera → detection + ReID on the DPU → DisplayPort and RTSP</text>
+<rect x="28" y="160" width="190" height="76" rx="10" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+<text x="123.0" y="194.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Camera module</text>
+<text x="123.0" y="217.0" font-size="16" fill="#57606a" text-anchor="middle">AR1335 + AP1302 ISP</text>
+<rect x="1018" y="170" width="160" height="76" rx="10" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+<text x="1098.0" y="204.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Monitor</text>
+<text x="1098.0" y="227.0" font-size="16" fill="#57606a" text-anchor="middle">DisplayPort · HUD</text>
+<rect x="1018" y="300" width="160" height="76" rx="10" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+<text x="1098.0" y="334.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">RTSP client</text>
+<text x="1098.0" y="357.0" font-size="16" fill="#57606a" text-anchor="middle">VLC · ffplay</text>
+<rect x="262" y="80" width="728" height="496" rx="16" fill="#f6f8fa" stroke="#424a53" stroke-width="2.5"/>
+<text x="280" y="108" font-size="19" fill="#1f2328" text-anchor="start" font-weight="700">Zynq UltraScale+ K26 SOM (KV260)</text>
+<rect x="282" y="122" width="330" height="338" rx="12" fill="#e7f1fb" stroke="#2f80c8" stroke-width="2"/>
+<text x="296" y="144" font-size="16" fill="#1f6fb2" text-anchor="start" font-weight="700">PL · AMD Smart Camera design</text>
+<rect x="297" y="152" width="300" height="62" rx="10" fill="#ffffff" stroke="#2f80c8" stroke-width="2"/>
+<text x="447.0" y="179.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">MIPI CSI-2 RX</text>
+<text x="447.0" y="202.0" font-size="16" fill="#57606a" text-anchor="middle">4 lanes · NV12 frame buffer</text>
+<rect x="297" y="226" width="300" height="56" rx="10" fill="#ffffff" stroke="#2f80c8" stroke-width="2"/>
+<text x="447.0" y="250.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">VCU</text>
+<text x="447.0" y="272.0" font-size="16" fill="#57606a" text-anchor="middle">hard H.264 encoder</text>
+<rect x="297" y="294" width="300" height="152" rx="12" fill="#fdf1e3" stroke="#e0821e" stroke-width="2"/>
+<text x="311" y="316" font-size="16" fill="#b8650f" text-anchor="start" font-weight="700">DPU B3136 · INT8</text>
+<rect x="312" y="326" width="270" height="52" rx="10" fill="#ffffff" stroke="#e0821e" stroke-width="2"/>
+<text x="447.0" y="348.0" font-size="18" fill="#1f2328" text-anchor="middle" font-weight="700">RefineDet</text>
+<text x="447.0" y="369.0" font-size="15" fill="#57606a" text-anchor="middle">persons · 480×360</text>
+<rect x="312" y="386" width="270" height="52" rx="10" fill="#ffffff" stroke="#e0821e" stroke-width="2"/>
+<text x="447.0" y="408.0" font-size="18" fill="#1f2328" text-anchor="middle" font-weight="700">ReID</text>
+<text x="447.0" y="429.0" font-size="15" fill="#57606a" text-anchor="middle">ResNet-18 · selected crops only</text>
+<rect x="630" y="122" width="340" height="338" rx="12" fill="#ebf6e5" stroke="#4f9d3a" stroke-width="2"/>
+<text x="644" y="144" font-size="16" fill="#3d7d2c" text-anchor="start" font-weight="700">PS · 4× Cortex-A53 · Mali-400 GPU</text>
+<rect x="645" y="152" width="310" height="62" rx="10" fill="#ffffff" stroke="#4f9d3a" stroke-width="2"/>
+<text x="800.0" y="179.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">GPU pre-processing</text>
+<text x="800.0" y="202.0" font-size="16" fill="#57606a" text-anchor="middle">NV12 dma-buf → 480×360 BGR</text>
+<rect x="645" y="228" width="310" height="62" rx="10" fill="#ffffff" stroke="#4f9d3a" stroke-width="2"/>
+<text x="800.0" y="255.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Tracker</text>
+<text x="800.0" y="278.0" font-size="16" fill="#57606a" text-anchor="middle">Kalman · ByteTrack · ReID gallery</text>
+<rect x="645" y="304" width="310" height="62" rx="10" fill="#ffffff" stroke="#4f9d3a" stroke-width="2"/>
+<text x="800.0" y="331.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">HUD</text>
+<text x="800.0" y="354.0" font-size="16" fill="#57606a" text-anchor="middle">drawn into the camera buffer</text>
+<rect x="645" y="380" width="310" height="62" rx="10" fill="#ffffff" stroke="#4f9d3a" stroke-width="2"/>
+<text x="800.0" y="407.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Display + RTSP server</text>
+<text x="800.0" y="430.0" font-size="16" fill="#57606a" text-anchor="middle">kmssink · gst-rtsp-server</text>
+<rect x="282" y="500" width="688" height="56" rx="12" fill="#eef1f4" stroke="#8c959f" stroke-width="2"/>
+<text x="626" y="535" font-size="18" fill="#1f2328" text-anchor="middle" font-weight="700">DDR · camera buffers (zero-copy) · network input · H.264</text>
+<path d="M218,198 L258,198 L258,183 L297,183" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<path d="M597,183 L621,183 L621,500" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<path d="M447,446 L447,500" fill="none" stroke="#e0821e" stroke-width="2.5" marker-end="url(#ae)" marker-start="url(#as)"/>
+<path d="M800,460 L800,500" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)" marker-start="url(#ds)"/>
+<path d="M800,214 L800,228" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<path d="M800,290 L800,304" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<path d="M800,366 L800,380" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<path d="M955,404 L1000,404 L1000,208 L1018,208" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<path d="M955,424 L1008,424 L1008,338 L1018,338" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<rect x="32" y="603" width="20" height="20" rx="5" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+<text x="62" y="618" font-size="16" fill="#57606a" text-anchor="start">Off-chip</text>
+<rect x="168" y="603" width="20" height="20" rx="5" fill="#e7f1fb" stroke="#2f80c8" stroke-width="2"/>
+<text x="198" y="618" font-size="16" fill="#57606a" text-anchor="start">PL</text>
+<rect x="250" y="603" width="20" height="20" rx="5" fill="#ebf6e5" stroke="#4f9d3a" stroke-width="2"/>
+<text x="280" y="618" font-size="16" fill="#57606a" text-anchor="start">PS (Arm)</text>
+<rect x="386" y="603" width="20" height="20" rx="5" fill="#fdf1e3" stroke="#e0821e" stroke-width="2"/>
+<text x="416" y="618" font-size="16" fill="#57606a" text-anchor="start">DPU</text>
+<rect x="490" y="603" width="20" height="20" rx="5" fill="#eef1f4" stroke="#8c959f" stroke-width="2"/>
+<text x="520" y="618" font-size="16" fill="#57606a" text-anchor="start">Memory</text>
+<path d="M608,613 L642,613" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<text x="654" y="618" font-size="16" fill="#57606a" text-anchor="start">Data</text>
+<path d="M724,613 L758,613" stroke="#e0821e" stroke-width="2.5" marker-end="url(#ae)"/>
+<text x="770" y="618" font-size="16" fill="#57606a" text-anchor="start">DPU data</text>
+</svg>

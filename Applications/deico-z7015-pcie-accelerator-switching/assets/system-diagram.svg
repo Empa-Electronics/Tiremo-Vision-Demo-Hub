@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" width="1200" height="650" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<defs><marker id="de" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#424a53"/></marker><marker id="ds" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10,0 L0,5 L10,10 z" fill="#424a53"/></marker><marker id="ae" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#e0821e"/></marker><marker id="as" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10,0 L0,5 L10,10 z" fill="#e0821e"/></marker></defs>
+<rect x="1" y="1" width="1198" height="648" rx="20" fill="#ffffff" stroke="#d0d7de" stroke-width="2"/>
+<text x="32" y="50" font-size="26" fill="#1f2328" text-anchor="start" font-weight="700">Host PC → PCIe → Zynq-7015 card: swap the accelerator at runtime</text>
+<rect x="28" y="80" width="260" height="420" rx="16" fill="#ffffff" stroke="#57606a" stroke-width="2.5"/>
+<text x="44" y="108" font-size="19" fill="#1f2328" text-anchor="start" font-weight="700">Host PC · Ubuntu 24.04</text>
+<rect x="43" y="120" width="230" height="62" rx="10" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+<text x="158.0" y="147.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Bitstream library</text>
+<text x="158.0" y="170.0" font-size="16" fill="#57606a" text-anchor="middle">one .bit.bin per accelerator</text>
+<rect x="43" y="196" width="230" height="62" rx="10" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+<text x="158.0" y="223.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Demo launcher</text>
+<text x="158.0" y="246.0" font-size="16" fill="#57606a" text-anchor="middle">Tab switches the demo</text>
+<rect x="43" y="272" width="230" height="62" rx="10" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+<text x="158.0" y="299.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">fpga_update.py</text>
+<text x="158.0" y="322.0" font-size="16" fill="#57606a" text-anchor="middle">upload · LOAD · CONFIRM</text>
+<rect x="43" y="348" width="230" height="62" rx="10" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+<text x="158.0" y="375.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">VFIO user space</text>
+<text x="158.0" y="398.0" font-size="16" fill="#57606a" text-anchor="middle">BAR access · DMA · no driver</text>
+<rect x="43" y="424" width="230" height="62" rx="10" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+<text x="158.0" y="451.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Camera + monitor</text>
+<text x="158.0" y="474.0" font-size="16" fill="#57606a" text-anchor="middle">USB in · display out</text>
+<rect x="330" y="80" width="842" height="420" rx="16" fill="#f6f8fa" stroke="#424a53" stroke-width="2.5"/>
+<text x="348" y="108" font-size="19" fill="#1f2328" text-anchor="start" font-weight="700">Deico PCIe card · Zynq-7015</text>
+<rect x="350" y="118" width="480" height="276" rx="12" fill="#e7f1fb" stroke="#2f80c8" stroke-width="2"/>
+<text x="364" y="140" font-size="16" fill="#1f6fb2" text-anchor="start" font-weight="700">PL · reloaded at runtime</text>
+<rect x="366" y="148" width="448" height="62" rx="10" fill="#ffffff" stroke="#2f80c8" stroke-width="2"/>
+<text x="590.0" y="175.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">XDMA PCIe endpoint</text>
+<text x="590.0" y="198.0" font-size="16" fill="#57606a" text-anchor="middle">Gen1 x1 · BAR0 1 MB · BAR1 64 KB</text>
+<rect x="366" y="224" width="448" height="156" rx="12" fill="#fdf1e3" stroke="#e0821e" stroke-width="2"/>
+<text x="380" y="246" font-size="16" fill="#b8650f" text-anchor="start" font-weight="700">Accelerator slot · one design at a time</text>
+<rect x="380" y="258" width="136" height="62" rx="10" fill="#ffffff" stroke="#e0821e" stroke-width="2"/>
+<text x="448.0" y="285.0" font-size="18" fill="#1f2328" text-anchor="middle" font-weight="700">Stabilizer</text>
+<text x="448.0" y="308.0" font-size="15" fill="#57606a" text-anchor="middle">20b2:1340</text>
+<rect x="528" y="258" width="136" height="62" rx="10" fill="#ffffff" stroke="#e0821e" stroke-width="2"/>
+<text x="596.0" y="285.0" font-size="18" fill="#1f2328" text-anchor="middle" font-weight="700">KCF tracker</text>
+<text x="596.0" y="308.0" font-size="15" fill="#57606a" text-anchor="middle">20b2:1333</text>
+<rect x="676" y="258" width="124" height="62" rx="10" fill="#ffffff" stroke="#e0821e" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="738.0" y="285.0" font-size="18" fill="#1f2328" text-anchor="middle" font-weight="700">Your design</text>
+<text x="738.0" y="308.0" font-size="15" fill="#57606a" text-anchor="middle">1350 and up</text>
+<text x="590" y="356" font-size="17" fill="#57606a" text-anchor="middle" font-style="italic">same shell contract · switch in about 3.2 s</text>
+<rect x="850" y="118" width="302" height="276" rx="12" fill="#ebf6e5" stroke="#4f9d3a" stroke-width="2"/>
+<text x="864" y="140" font-size="16" fill="#3d7d2c" text-anchor="start" font-weight="700">PS · Cortex-A9 · bare metal</text>
+<rect x="865" y="148" width="272" height="62" rx="10" fill="#ffffff" stroke="#4f9d3a" stroke-width="2"/>
+<text x="1001.0" y="175.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Loader</text>
+<text x="1001.0" y="198.0" font-size="16" fill="#57606a" text-anchor="middle">mailbox · length · CRC-32</text>
+<rect x="865" y="224" width="272" height="62" rx="10" fill="#ffffff" stroke="#4f9d3a" stroke-width="2"/>
+<text x="1001.0" y="251.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">PCAP</text>
+<text x="1001.0" y="274.0" font-size="16" fill="#57606a" text-anchor="middle">full reload of the PL</text>
+<rect x="865" y="300" width="272" height="62" rx="10" fill="#ffffff" stroke="#4f9d3a" stroke-width="2"/>
+<text x="1001.0" y="327.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Confirm or revert</text>
+<text x="1001.0" y="350.0" font-size="16" fill="#57606a" text-anchor="middle">last good design after 15 s</text>
+<rect x="350" y="424" width="802" height="56" rx="12" fill="#eef1f4" stroke="#8c959f" stroke-width="2"/>
+<text x="751" y="459" font-size="18" fill="#1f2328" text-anchor="middle" font-weight="700">DDR3 · loader · bitstream staging · mailbox · video frames</text>
+<text x="309" y="168" font-size="15" fill="#57606a" text-anchor="middle" font-weight="700">PCIe</text>
+<path d="M158,182 L158,196" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<path d="M158,258 L158,272" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<path d="M158,334 L158,348" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<path d="M273,379 L309,379 L309,179 L366,179" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)" marker-start="url(#ds)"/>
+<path d="M814,179 L840,179 L840,424" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)" marker-start="url(#ds)"/>
+<path d="M590,380 L590,424" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)" marker-start="url(#ds)"/>
+<path d="M1001,362 L1001,424" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)" marker-start="url(#ds)"/>
+<path d="M865,255 L816,255" fill="none" stroke="#e0821e" stroke-width="2.5" stroke-dasharray="7 5" marker-end="url(#ae)"/>
+<rect x="32" y="603" width="20" height="20" rx="5" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+<text x="62" y="618" font-size="16" fill="#57606a" text-anchor="start">Off-chip</text>
+<rect x="168" y="603" width="20" height="20" rx="5" fill="#e7f1fb" stroke="#2f80c8" stroke-width="2"/>
+<text x="198" y="618" font-size="16" fill="#57606a" text-anchor="start">PL</text>
+<rect x="250" y="603" width="20" height="20" rx="5" fill="#ebf6e5" stroke="#4f9d3a" stroke-width="2"/>
+<text x="280" y="618" font-size="16" fill="#57606a" text-anchor="start">PS (Arm)</text>
+<rect x="386" y="603" width="20" height="20" rx="5" fill="#fdf1e3" stroke="#e0821e" stroke-width="2"/>
+<text x="416" y="618" font-size="16" fill="#57606a" text-anchor="start">Accelerator</text>
+<rect x="541" y="603" width="20" height="20" rx="5" fill="#eef1f4" stroke="#8c959f" stroke-width="2"/>
+<text x="571" y="618" font-size="16" fill="#57606a" text-anchor="start">Memory</text>
+<path d="M659,613 L693,613" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<text x="705" y="618" font-size="16" fill="#57606a" text-anchor="start">Data</text>
+<path d="M775,613 L809,613" stroke="#e0821e" stroke-width="2.5" stroke-dasharray="7 5" marker-end="url(#ae)"/>
+<text x="821" y="618" font-size="16" fill="#57606a" text-anchor="start">PL reload</text>
+</svg>
