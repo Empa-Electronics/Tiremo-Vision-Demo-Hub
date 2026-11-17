@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" width="1200" height="620" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<defs><marker id="de" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#424a53"/></marker><marker id="ds" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10,0 L0,5 L10,10 z" fill="#424a53"/></marker><marker id="ae" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#e0821e"/></marker><marker id="as" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10,0 L0,5 L10,10 z" fill="#e0821e"/></marker></defs>
+<rect x="1" y="1" width="1198" height="618" rx="20" fill="#ffffff" stroke="#d0d7de" stroke-width="2"/>
+<text x="32" y="50" font-size="26" fill="#1f2328" text-anchor="start" font-weight="700">HDMI 2.1 in → AI Engine NPU → HDMI 2.1 out + Ethernet</text>
+<rect x="28" y="140" width="190" height="84" rx="10" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+<text x="123.0" y="178.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Simulator PC</text>
+<text x="123.0" y="201.0" font-size="16" fill="#57606a" text-anchor="middle">AI drone camera</text>
+<rect x="28" y="440" width="190" height="84" rx="10" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+<text x="123.0" y="478.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Display</text>
+<text x="123.0" y="501.0" font-size="16" fill="#57606a" text-anchor="middle">AI view · 1080p</text>
+<rect x="262" y="80" width="910" height="466" rx="16" fill="#f6f8fa" stroke="#424a53" stroke-width="2.5"/>
+<text x="280" y="108" font-size="19" fill="#1f2328" text-anchor="start" font-weight="700">Versal AI Edge VE2802</text>
+<rect x="282" y="122" width="870" height="100" rx="12" fill="#e7f1fb" stroke="#2f80c8" stroke-width="2"/>
+<text x="296" y="144" font-size="16" fill="#1f6fb2" text-anchor="start" font-weight="700">PL</text>
+<rect x="330" y="140" width="230" height="66" rx="10" fill="#ffffff" stroke="#2f80c8" stroke-width="2"/>
+<text x="445.0" y="169.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">HDMI 2.1 RX</text>
+<text x="445.0" y="192.0" font-size="16" fill="#57606a" text-anchor="middle">1080p · 60 Hz</text>
+<rect x="615" y="140" width="230" height="66" rx="10" fill="#ffffff" stroke="#2f80c8" stroke-width="2"/>
+<text x="730.0" y="180.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Frame buffer write</text>
+<rect x="282" y="238" width="330" height="186" rx="12" fill="#ebf6e5" stroke="#4f9d3a" stroke-width="2"/>
+<text x="296" y="260" font-size="16" fill="#3d7d2c" text-anchor="start" font-weight="700">PS · 2× Cortex-A72</text>
+<rect x="297" y="268" width="300" height="40" rx="10" fill="#ffffff" stroke="#4f9d3a" stroke-width="2"/>
+<text x="447.0" y="295.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Scale + quantize</text>
+<rect x="297" y="316" width="300" height="40" rx="10" fill="#ffffff" stroke="#4f9d3a" stroke-width="2"/>
+<text x="447.0" y="343.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Decode · NMS · tracker</text>
+<rect x="297" y="364" width="300" height="40" rx="10" fill="#ffffff" stroke="#4f9d3a" stroke-width="2"/>
+<text x="447.0" y="391.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Chase / escape control</text>
+<rect x="640" y="238" width="180" height="186" rx="12" fill="#eef1f4" stroke="#8c959f" stroke-width="2"/>
+<text x="654" y="260" font-size="16" fill="#57606a" text-anchor="start" font-weight="700">Memory</text>
+<rect x="655" y="268" width="150" height="136" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+<text x="730.0" y="310.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">LPDDR</text>
+<text x="730.0" y="333.0" font-size="16" fill="#57606a" text-anchor="middle">via NoC</text>
+<text x="730.0" y="356.0" font-size="16" fill="#57606a" text-anchor="middle">frames</text>
+<text x="730.0" y="379.0" font-size="16" fill="#57606a" text-anchor="middle">tensors</text>
+<rect x="848" y="238" width="304" height="186" rx="12" fill="#fdf1e3" stroke="#e0821e" stroke-width="2"/>
+<text x="862" y="260" font-size="16" fill="#b8650f" text-anchor="start" font-weight="700">AI Engine NPU</text>
+<rect x="863" y="268" width="274" height="136" rx="10" fill="#ffffff" stroke="#e0821e" stroke-width="2"/>
+<text x="1000.0" y="310.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">YOLOv8s detector</text>
+<text x="1000.0" y="333.0" font-size="16" fill="#57606a" text-anchor="middle">304 AI Engines · 450 MHz</text>
+<text x="1000.0" y="356.0" font-size="16" fill="#57606a" text-anchor="middle">INT8 + BF16</text>
+<text x="1000.0" y="379.0" font-size="16" fill="#57606a" text-anchor="middle">mixed precision</text>
+<rect x="282" y="440" width="870" height="92" rx="12" fill="#e7f1fb" stroke="#2f80c8" stroke-width="2"/>
+<text x="296" y="462" font-size="16" fill="#1f6fb2" text-anchor="start" font-weight="700">PL</text>
+<rect x="330" y="456" width="230" height="66" rx="10" fill="#ffffff" stroke="#2f80c8" stroke-width="2"/>
+<text x="445.0" y="485.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">HDMI 2.1 TX</text>
+<text x="445.0" y="508.0" font-size="16" fill="#57606a" text-anchor="middle">1080p · 60 Hz</text>
+<rect x="615" y="456" width="230" height="66" rx="10" fill="#ffffff" stroke="#2f80c8" stroke-width="2"/>
+<text x="730.0" y="496.0" font-size="19" fill="#1f2328" text-anchor="middle" font-weight="700">Frame buffer read</text>
+<path d="M218,173 L330,173" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<path d="M560,173 L615,173" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<path d="M730,206 L730,268" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<path d="M597,336 L655,336" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)" marker-start="url(#ds)"/>
+<path d="M805,336 L863,336" fill="none" stroke="#e0821e" stroke-width="2.5" marker-end="url(#ae)" marker-start="url(#as)"/>
+<path d="M730,404 L730,456" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<path d="M615,489 L560,489" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<path d="M330,489 L218,489" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<path d="M297,384 L123,384 L123,224" fill="none" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<text x="133" y="318" font-size="15" fill="#57606a" text-anchor="start" font-style="italic">Ethernet</text>
+<text x="133" y="338" font-size="15" fill="#57606a" text-anchor="start" font-style="italic">UDP · 60 Hz</text>
+<text x="133" y="358" font-size="15" fill="#57606a" text-anchor="start" font-style="italic">flight cmds</text>
+<rect x="32" y="573" width="20" height="20" rx="5" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+<text x="62" y="588" font-size="16" fill="#57606a" text-anchor="start">Off-chip</text>
+<rect x="168" y="573" width="20" height="20" rx="5" fill="#e7f1fb" stroke="#2f80c8" stroke-width="2"/>
+<text x="198" y="588" font-size="16" fill="#57606a" text-anchor="start">PL</text>
+<rect x="250" y="573" width="20" height="20" rx="5" fill="#ebf6e5" stroke="#4f9d3a" stroke-width="2"/>
+<text x="280" y="588" font-size="16" fill="#57606a" text-anchor="start">PS (Arm)</text>
+<rect x="386" y="573" width="20" height="20" rx="5" fill="#fdf1e3" stroke="#e0821e" stroke-width="2"/>
+<text x="416" y="588" font-size="16" fill="#57606a" text-anchor="start">AI Engine NPU</text>
+<rect x="567" y="573" width="20" height="20" rx="5" fill="#eef1f4" stroke="#8c959f" stroke-width="2"/>
+<text x="597" y="588" font-size="16" fill="#57606a" text-anchor="start">Memory</text>
+<path d="M685,583 L719,583" stroke="#424a53" stroke-width="2.5" marker-end="url(#de)"/>
+<text x="731" y="588" font-size="16" fill="#57606a" text-anchor="start">Data</text>
+<path d="M801,583 L835,583" stroke="#e0821e" stroke-width="2.5" marker-end="url(#ae)"/>
+<text x="847" y="588" font-size="16" fill="#57606a" text-anchor="start">NPU data</text>
+</svg>
